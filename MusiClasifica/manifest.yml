@@ -1,0 +1,4 @@
+﻿applications:
+ - name: musiclasifica
+   random-route: true
+   memory: 512M
