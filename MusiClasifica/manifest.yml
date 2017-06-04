@@ -1,4 +1,3 @@
 ﻿applications:
- - name: musiclasifica
-   random-route: true
-   memory: 512M
+- name: musiclasifica
+  memory: 512M

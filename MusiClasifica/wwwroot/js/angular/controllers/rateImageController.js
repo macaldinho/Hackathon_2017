@@ -41,7 +41,7 @@
 });
 
 $(document).ready(function () {
-    $("#cover").width(200).height(200);
-    $("#notAppropiated").width(200).height(200);
-    $("#appropiated").width(200).height(200);
+    $("#cover").width("100%").height(200);
+    $("#notAppropiated").width("100%").height(200);
+    $("#appropiated").width("100%").height(200);
 });

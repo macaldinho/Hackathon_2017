@@ -4,16 +4,27 @@
        
         <div class="container" ng-controller="rateImageController">
             <div class="row form-group">
-                <div class="col-lg-6 form-inline">
-                    <input type="text" class="form-control" ng-model="imageURL" ng-change="setImage()" />
-                    <button class="btn btn-md btn-primary" ng-click="rate();">Rate</button>
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                    <label>Image URL:</label>
+                    <br/>
+                    <input type="text" class="form-control" ng-model="imageURL" ng-change="setImage()"/>
+                    <br/>
+                    <button class="btn btn-md btn-primary" style="width: 100%" ng-click="rate();">Rate</button>
+                </div>
+                <div class="col-lg-4">
                 </div>
             </div>
             <div class="row">
-                <div class="form-inline">
-                    <img id="cover" ng-src="{{imageSource}}" alt="coverAlbum" width="0" height="0" ng-hide="imageSource === undefined || imageSource === ''" />
+                <div class="col-lg-4">
                     <img id="notAppropiated" alt="parentAdvisoryN" src="~/images/parental-advisory.jpg" width="0" height="0" ng-show="notAppropiated" />
                     <img id="appropiated" alt="parentAdvisoryA" src="~/images/thumbsup.jpg" width="0" height="0" ng-show="appropiated" />
+                </div>
+                <div class="col-lg-4">
+                    <img id="cover" ng-src="{{imageSource}}" alt="coverAlbum" width="0" height="0" ng-hide="imageSource === undefined || imageSource === ''" />
+                </div>
+                <div class="col-lg-4">
                 </div>
             </div>
         </div>
