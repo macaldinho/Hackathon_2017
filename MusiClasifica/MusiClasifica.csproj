@@ -7,6 +7,24 @@
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\js\loopback\**" />
+    <Content Remove="wwwroot\js\loopback\**" />
+    <EmbeddedResource Remove="wwwroot\js\loopback\**" />
+    <None Remove="wwwroot\js\loopback\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\images\musiclasifica.jpg" />
+    <Content Include="wwwroot\images\parental-advisory.jpg" />
+    <Content Include="wwwroot\images\thumbsup.jpg" />
+    <Content Include="wwwroot\js\angular\controllers\rateImageController.js" />
+    <Content Include="wwwroot\js\angular\controllers\rateLyricsController.js" />
+    <Content Include="wwwroot\js\angular\rateApp.js" />
+    <Content Include="wwwroot\js\lb-services.js" />
+    <Content Include="wwwroot\favicon.ico" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />

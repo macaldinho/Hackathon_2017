@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Rate my Lyrics";
+}
+<div class="container" ng-controller="rateLyricsController">
+
+    <div class="row form-group">
+        <textarea class="form-control" ng-model="lyrics" ng-change="setImage()" style="width: 25%;" rows="15"></textarea>
+        <button class="btn btn-md btn-primary" ng-click="rate();">Rate</button>
+    </div>
+
+    <div class="row">
+        <div class="form-inline">
+            <img id="notAppropiated" alt="parentAdvisory" src="~/images/parental-advisory.jpg" width="0" height="0" ng-show="notAppropiated" />
+            <img id="appropiated" alt="parentAdvisoryA" src="~/images/thumbsup.jpg" width="0" height="0" ng-show="appropiated" />
+        </div>
+    </div>
+</div>
